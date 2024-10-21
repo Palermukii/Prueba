@@ -1,0 +1,77 @@
+.regiones {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 2em; 
+    margin: 2em;
+}
+.divregion {
+    height: 10em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; /* Escala la imagen para que cubra toda la `div` */
+    background-position: center; /* Centra la imagen en la `div` */
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+}
+.divregion:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+#kanto {
+    background-image: url(../img/regiones/kanto.jpg);
+}
+#johto {
+    background-image: url(../img/regiones/johto.jpg);
+}
+#hoenn {
+    background-image: url(../img/regiones/hoenn.jpg);
+}
+#sinnoh {
+    background-image: url(../img/regiones/sinnoh.jpg);
+}
+#unova {
+    background-image: url(../img/regiones/unova.jpg);
+}
+#kalos {
+    background-image: url(../img/regiones/kalos.jpg);
+}
+#alola {
+    background-image: url(../img/regiones/alola.jpg);
+}
+#galar {
+    background-image: url(../img/regiones/galar.jpg);
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 75px;
+}
+h1:hover {
+    cursor:default;
+}
+@media (max-width: 1450px) {
+    .regiones {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas para pantallas pequeñas */
+        padding: 0;
+    }
+    .divregion {
+        height: 8em;
+    }
+}
+@media (max-width: 800px) {
+    .regiones {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a 2 columnas para pantallas pequeñas */
+        padding: 0;
+    }
+}
+@media (max-width: 500px) {
+    .divregion {
+        height: 4em;
+    }
+}

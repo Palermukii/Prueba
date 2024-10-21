@@ -1,0 +1,6 @@
+p {
+    font-size: 2em;
+}
+tr, thead {
+    gap: 100px;
+}

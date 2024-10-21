@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+}
+.icon img {
+    width: 1.4em;  /* Ajusta el tamaño del ícono según sea necesario */
+    height: auto;  /* Mantiene la proporción del ícono */
+    display: block; /* Asegura que el ícono se comporte correctamente en el flujo del documento */
+}
+.header {
+    width: 100%;
+ background-color: blue;
+ margin: 0;
+ padding: 2em;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+}
+.navlista {
+    margin: 0;
+    display: flex;
+    flex-direction:row;
+    gap: 3em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.navlista a {
+    text-decoration: none;
+    color: black;
+    max-width: 6em; /* Ajusta según tus necesidades */
+    overflow: hidden; /* Si el texto es muy largo, ocúltalo */
+    text-overflow: ellipsis; /* Agrega "..." al final del texto largo */
+    font-size: 2em;
+}
+.dragon-ball {
+    position: relative; /* Contenedor relativo para permitir la posición absoluta de la estrella */
+    display: inline-block;
+}
+
+.dragon-ball .circle {
+    color: orange;
+    font-size: 50px; /* Tamaño del círculo */
+}
+
+.dragon-ball .star {
+    color: yellow;
+    font-size: 0.4em; /* Tamaño de la estrella (ajusta según sea necesario) */
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar la estrella */
+}
+nav li {
+    transition: all .3s ease-in-out;
+}
+nav ul li:hover {
+    scale: 1.05;
+}

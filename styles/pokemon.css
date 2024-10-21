@@ -1,0 +1,48 @@
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-button img {
+    width: 1em;
+
+}
+.navlista li:first-child {
+    position: absolute;
+    left: 0/* Coloca la flecha a la izquierda */
+}
+#pokemon-info {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+    text-align: left;
+}
+#pokemon-info img {
+    padding-bottom: 20px;
+    background-color: rgb(182, 201, 218);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.stats  {
+    text-align: left;
+}
+.botones {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20em;
+
+}
+@media (max-width : 500px) {
+    .botones {
+        grid-column-gap: 10em;
+    }
+    #pokemon-info img {
+        width: 50%;
+        height: 50%;
+    }
+}
